@@ -1,0 +1,75 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Time:</b>
+  <%= @post.time %>
+</p>
+
+<p>
+  <b>Content:</b>
+  <%= @post.content %>
+</p>
+
+<p>
+  <b>Title:</b>
+  <%= @post.title %>
+</p>
+
+<p>
+  <b>Modified:</b>
+  <%= @post.modified %>
+</p>
+
+<p>
+  <b>Parent:</b>
+  <%= @post.parent %>
+</p>
+
+<p>
+  <b>Type:</b>
+  <%= @post.type %>
+</p>
+
+<p>
+  <b>Comment count:</b>
+  <%= @post.comment_count %>
+</p>
+
+<p>
+  <b>Menu orger:</b>
+  <%= @post.menu_orger %>
+</p>
+
+<p>
+  <b>Post status:</b>
+  <%= @post.post_status %>
+</p>
+
+<p>
+  <b>Comment status:</b>
+  <%= @post.comment_status %>
+</p>
+
+<p>
+  <b>User:</b>
+  <%= @post.user_id %>
+</p>
+
+<p>
+  <b>Views count:</b>
+  <%= @post.views_count %>
+</p>
+
+<p>
+  <b>Likes count:</b>
+  <%= @post.likes_count %>
+</p>
+
+<p>
+  <b>Dislikes count:</b>
+  <%= @post.dislikes_count %>
+</p>
+
+
+<%= link_to 'Edit', edit_post_path(@post) %> |
+<%= link_to 'Back', posts_path %>

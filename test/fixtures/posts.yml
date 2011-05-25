@@ -1,0 +1,33 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  time: 2011-05-25 16:48:17
+  content: MyText
+  title: MyString
+  modified: 2011-05-25 16:48:17
+  parent: 1
+  type: MyString
+  comment_count: 1
+  menu_orger: 1
+  post_status: false
+  comment_status: false
+  user_id: 1
+  views_count: 1
+  likes_count: 1
+  dislikes_count: 1
+
+two:
+  time: 2011-05-25 16:48:17
+  content: MyText
+  title: MyString
+  modified: 2011-05-25 16:48:17
+  parent: 1
+  type: MyString
+  comment_count: 1
+  menu_orger: 1
+  post_status: false
+  comment_status: false
+  user_id: 1
+  views_count: 1
+  likes_count: 1
+  dislikes_count: 1
