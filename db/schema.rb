@@ -10,7 +10,26 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110525144816) do
+ActiveRecord::Schema.define(:version => 20110525151000) do
+
+  create_table "comments", :force => true do |t|
+    t.string   "author"
+    t.string   "author_mail"
+    t.string   "author_ip"
+    t.datetime "date"
+    t.text     "content"
+    t.boolean  "approved"
+    t.integer  "post_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "options", :force => true do |t|
+    t.string   "name"
+    t.string   "value"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "posts", :force => true do |t|
     t.datetime "time"
@@ -27,6 +46,19 @@ ActiveRecord::Schema.define(:version => 20110525144816) do
     t.integer  "views_count"
     t.integer  "likes_count"
     t.integer  "dislikes_count"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "tags", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "tags_relations", :force => true do |t|
+    t.integer  "post_id"
+    t.integer  "tag_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

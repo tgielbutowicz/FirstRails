@@ -1,4 +1,12 @@
 FirstRails::Application.routes.draw do
+  resources :options
+
+  resources :comments
+
+  resources :tags
+
+  resources :tags_relations
+
   resources :posts
 
   resources :users
